@@ -1,0 +1,65 @@
+
+.app__header_gib_container{
+    position: absolute;
+    width: 90%;
+    top:10%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+    padding: 0;
+    margin: 0;
+    img{
+        z-index: 0;
+        position: absolute;
+    }
+    img:nth-child(1){
+        top: 63%;
+        left: 12%;
+    }
+    img:nth-child(2){
+        top: 52%;
+        left: 32%;
+
+    }
+    img:nth-child(3){
+        top: 44%;
+        left: 59%;
+    }
+    img:nth-child(4){
+        top: 80%;
+        right: 9%;
+
+    }
+    img:nth-child(5){
+        top:10%;
+        right: 30%;
+    }
+    img:nth-child(6){
+        right: 3%;
+        bottom: 43%;
+    }
+    img:nth-child(7){
+        right: 5.4%;
+        top: 6%;
+
+    }
+    @media screen and (max-width:800px){
+        width: 85%;
+        img{
+            -webkit-transform: scale(0.7)!important; /* Saf3.1+, Chrome */
+            -moz-transform: scale(0.7)!important; /* FF3.5+ */
+            -ms-transform: scale(0.7)!important; /* IE9 */
+            -o-transform: scale(0.7)!important; /* Opera 10.5+ */
+            transform: scale(0.7)!important;
+        }
+    }
+    @media screen and (max-width:500px){
+        img{
+            opacity: 40%;
+        }
+        img:nth-child(3){
+            top: 25%;
+
+        }
+    }
+}

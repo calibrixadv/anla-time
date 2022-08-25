@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Handlee&display=swap');
+
+:root{
+    --font-title:"Cabin Sketch", cursive;
+    --font-text:"Handlee",cursive;
+    --font-color-title:#8B1DC9;
+    --font-color-text:#CDB4DB;
+
+    --color-primary:#F8F2F5;
+    --color-secondary:#FFEEF4;
+
+    --color-light-pink:#FFC8DD;
+    --color-pink:#FFAFCC;
+    --color-extra-light-blue:#E3F2FF;
+    --color-light-blue:#BDE0FE;
+    --color-blue:#A2D2FF;
+    --color-dark-blue:#62B3FF;  
+    --color-nav:#EDDEE7;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    scroll-behavior: smooth;
+}

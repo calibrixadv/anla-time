@@ -1,0 +1,200 @@
+.app__date_container{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    @media screen and (min-width:900px){
+        margin-top: 2rem;
+    }
+    @media screen and (max-width:900px){
+        margin-top: 5rem;
+        
+    }
+}
+.app__date_main_ctn{
+    background-color: rgba(189,224,254,0.4);
+    width: 85%;
+    height: 70%;
+    border-radius: 23px;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.app__date_user_options{
+    button{
+        margin-top: auto;
+    }
+}
+.app__date_user_input{
+    align-self: flex-start;
+    justify-self: flex-end;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width:1250px){
+        div{
+            p,label{
+                font-size: 30px;
+            }
+        }
+        .app__input_date{
+            width: 15rem;
+            font-size:15px;
+        }
+    }
+    @media screen and(max-width:900px){
+        flex-direction: column;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 80%;
+        }
+        .app__input_date{
+            width: 100%;
+            font-size: 21px;
+            &::-webkit-datetime-edit{
+                font-size: 27px;
+            }
+        }
+    }
+    @media screen and(max-width:600px){
+
+        #current_time{
+            margin-right: 0;
+        }
+
+        .app__input_date{
+            width: 100%;
+            font-size: 18px;
+            &::-webkit-datetime-edit{
+                font-size: 15px;
+            }
+        }
+
+        div{
+            label,p{
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+    }
+}
+.app__date_start_ctn{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    p{
+        font-size:42px;
+    }
+}
+
+.app__date_end_ctn{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    input[type=checkbox]{
+        accent-color: var(--color-dark-blue);
+        margin-right: 1rem;
+    }
+    label{
+        font-size: 42px;
+    }
+    input{
+        transition:all 1 ease-in-out;
+    }
+    input:disabled{
+        filter:grayscale(1);
+        opacity: 0.5;
+        cursor:not-allowed;
+        .p-text{
+            color:var(--color-secondary);
+            text-shadow: none;
+            background-color: none;
+        }
+    }
+
+}
+
+.app__input_date{
+    width: 60%;  
+    border:none;
+    border-radius: 30px;
+    @media screen and (max-width:1250px){
+        width: 60%;
+        &::-webkit-datetime-edit{
+            font-size: 15px;
+        }
+        &::-webkit-calendar-picker-indicator{
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.app__date_btns{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button{
+        max-width: 30rem;
+        padding: 0.5rem 2.17rem;
+    }
+    .p-text{
+        text-align: center;
+        font-size: 32px;
+    }
+    .p-text:nth-child(4){
+        font-size: 20px;
+        opacity: 0.6;
+   }
+   @media screen and (max-width:500px){
+        button{
+            .p-text{
+                font-size: 21px;
+                color: var(--color-dark-blue);
+                transition:all 0.3s ease-in-out;
+            }
+        }
+    
+   }
+}
+
+@media screen and(max-height:700px) , screen and (max-width:400px){
+    .app__date_container{
+        margin-top: 2rem;
+    }
+    .app__date_main_ctn{
+        height: 100%;
+    }
+    .app__date_user_input{
+        div{
+            label{
+                font-size: 21px;
+            }
+        }
+    }
+    .app__input_date{
+        &::-webkit-datetime-edit{
+            font-size: 12px!important;
+        }
+    }
+    #button_calculate{
+        .p-text{
+            font-size: 21px;
+            color:var(--color-dark-blue)
+        }
+    }
+}
